@@ -7,5 +7,10 @@ pipeline {
                 sh('ls -l')
             }
         }
+        stage('Maven Clean') {
+            steps {
+                sh('mvn clean')
+            }
+        }
     }
 }
