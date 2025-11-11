@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'docker-java' }
 
     stages {
         stage('Listar arquivos') {
