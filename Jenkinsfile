@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'docker-java' }
+    docker { image 'maven:3.9.11-amazoncorretto-11' }
 
     stages {
         stage('Listar arquivos') {
